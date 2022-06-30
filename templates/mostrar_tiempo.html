@@ -1,0 +1,14 @@
+{% extends "base_template.html" %}
+{% block title %}Mostrar por Tiempo{% endblock %}
+{%block content%}
+<div class="hero-image2">
+    <div id="hero-text">
+    <h1 class="title3">Recetas filtradas por tiempo </h1>
+        <form class="form-register" action="{{url_for('ConsultarPorTiempo')}}"method="post">
+        <label for='tiempo'>Ingrese tiempo:</label>
+        <input class="controls" type="number" name="tiempo">
+        <input class="botons" type="submit" value="Mostrar">
+    </form>
+    </div>
+</div>
+{%endblock%}

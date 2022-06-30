@@ -1,0 +1,16 @@
+{% extends "base_template.html" %}
+{% block title %}{{ titulo }}{% endblock %}
+
+{% block content %}
+<div class="hero-image3">
+    <div id="hero-text">
+        <h1 class="title3"> {{ titulo }}</h1>
+        {% for unaReceta in recetas %}
+            <a class='receta' href="{{ url_for('mostrar',id=unaReceta.id) }}" >{{unaReceta.nombre}} </a>
+            <p><i class="fa-solid fa-thumbs-up"></i> Me gustas: {{unaReceta.cantidadmegusta}}</p>
+        {% endfor %}
+            <br><br><a class="botons" href="{{ url_for('Ingreso') }}" >Menu principal</a><br><br>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "base_template.html" %}
+
+{% block title %}Error{% endblock %}
+
+{% block content%}
+<div class="error">
+    <h1>Error</h1>
+    <h2 class="mensaje-error">{{ mensaje }}</h2>
+    <br><br><a class="botons" href="{{ url_for('Inicio') }}" >Iniciar sesion</a><br><br>
+</div> 
+{% endblock %}

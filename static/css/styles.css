@@ -1,0 +1,475 @@
+*{
+    font-family: 'Karla', sans-serif;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: none;
+    text-decoration: none;
+}
+
+    body {
+        background: linear-gradient(316deg, #faf8f1, #a89d8a, #7c6c50, #3f3930);
+        background-size: 800% 800%;
+    
+        -webkit-animation: AnimationName 31s ease infinite;
+        -moz-animation: AnimationName 31s ease infinite;
+        animation: AnimationName 31s ease infinite;
+    }
+    
+    @-webkit-keyframes AnimationName {
+        0%{background-position:0% 18%}
+        50%{background-position:100% 83%}
+        100%{background-position:0% 18%}
+    }
+    @-moz-keyframes AnimationName {
+        0%{background-position:0% 18%}
+        50%{background-position:100% 83%}
+        100%{background-position:0% 18%}
+    }
+    @keyframes AnimationName {
+        0%{background-position:0% 18%}
+        50%{background-position:100% 83%}
+        100%{background-position:0% 18%}
+    }
+
+    .title2{
+        background-color: #A89D8A;
+        border-radius: 20px;
+        width: 1000px;
+        margin-left: 500px;
+        margin-right: 500px;
+        padding: 0;
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        align-items: center;
+        display: inline-block;
+        animation: bounce; /* referring directly to the animation's @keyframe declaration */
+        animation-duration: 2s; /* don't forget to set a duration! */
+    }
+
+    .boton {
+        width: 100%;
+        background: #3F3930;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+        text-transform: none;
+        text-decoration: none;
+    }
+    
+    .boton:hover{
+        background: #7C6C50;
+    }
+    
+    li{
+        list-style: none;
+    }
+
+    .boton2{
+        background: #3F3930;
+        border: none;
+        border-radius: 20px;
+        width: 1200px;
+        margin-left: 500px;
+        margin-right: 500px;
+        padding: 0;
+        text-align: center;
+        padding: 12px;
+        color: white;
+        margin: 0 0;
+        font-size: 16px;
+        align-items: center;
+        text-decoration: none;
+        text-transform: none;
+    }
+
+    .opcion{
+        background: #3F3930;
+        border: none;
+        border-radius: 20px;
+        width: 1000px;
+        margin-left: 500px;
+        margin-right: 500px;
+        padding: 0;
+        font-size: 40px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        align-items: center;
+        text-decoration: none;
+        text-transform: none;
+    }
+    
+    .boton2:hover{
+        background: #7C6C50;
+        color: white;
+    }
+
+    .botons {
+        width: 100%;
+        background: #3F3930;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: none;
+        align-items: center;
+    }
+    
+    .botons:hover{
+        background: #7C6C50;
+        color: white;
+    }
+
+    .error{
+        margin-top: 100px;
+        color: black;
+        text-align: center;
+        margin-bottom: 250px;
+    }
+
+/* MENU DE NAVEGACION */
+
+.btn{
+    width: 100%;
+    background: #3F3930;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.btn:hover{
+    background:#7C6C50;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left:0; right:0;
+    padding:0.05rem 9%;
+    z-index: 1000;
+    background-color: #FAF8F1;
+}
+
+nav.navbar.active{
+
+    background-color: none;
+}
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 25px;
+    color: #3F3930;
+    text-decoration: none;
+}
+
+.header .navbar a:hover{
+    color:#7C6C50;
+}
+
+.dropdown-item{
+    background: none;
+    padding: 0;
+}
+
+a.dropdown-item:hover{
+    background: none;
+    padding:0;
+
+}
+
+a.dropdown-item{
+    padding: 0;
+}
+
+a#dropdownMenuLink{
+    background: none;
+    border: none;
+
+}
+
+.hero-image{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/menu.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 1500px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+#hero-text{
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-weight: bold;
+    height: auto;
+    width: 1920px;
+    text-align: center;
+    
+}
+
+.title3{
+    background-color: #A89D8A;
+    border-radius: 20px;
+    width: 1000px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    display: inline-block;
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+.fa-solid-fa-thumbs-up{
+    
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+    color: #3F3930;
+}
+
+.receta{
+    background-color: #3F3930;
+    border-radius: 20px;
+    width: 1000px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    display: inline-block;
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+/* AGREGAR RECETA */
+.form-register {
+    width: 700px;
+    background: #090F0F;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    background: #090F0F;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #3F3930;
+    font-size: 18px;
+    color: white;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.hero-image6{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/receta.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 1500px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* INGRESAR INGREDIENTES */
+
+.hero-image7{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/receta.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 1500px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* RECETA POR TIEMPO */
+
+.hero-image2{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/hero2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 1400px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+/* RECETAS QUE APARECEN */
+
+.hero-image3{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/hero3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 1788px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+/* RECETA POR INGREDIENTE */
+
+.hero-image4{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/hero4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 1500px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* MOSTRAR RECETAS */
+.hero-image8{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../img/recetas.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 1788px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../img/background-footer.svg);
+    background-size: cover;
+    padding-bottom: 0;
+    
+    /*background-color: #d0f0f8;
+    -webkit-mask-image: url("../Images/background-footer.svg");
+    mask-image: url("../Images/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;*/
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    height: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    height: 90px;
+    width: 90px;
+}
+
+.box__footer a{
+    margin-top: 20px;
+    color: #7C6C50;
+    font-weight: 600;
+}
+
+.box__footer i{
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+    color: #3f3930;
+}
+
+.box__footer a .fab{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
+
+
+

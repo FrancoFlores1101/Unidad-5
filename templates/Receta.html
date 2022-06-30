@@ -1,0 +1,22 @@
+{% extends "base_template.html" %}
+{% block title %}Receta{% endblock %}
+{%block content%}
+<div class="hero-image8">
+        <div id="hero-text">
+                <h1 class="title3">{{receta.nombre}}</h1>
+                <h2 class="receta">Publicado por {{persona.nombre}}      {{receta.fecha}} </h2>
+                <h2>Ingredientes: </h3>
+                {%for unIngrediente in ingredientes%} 
+                        <p>{{unIngrediente.nombre}} {{unIngrediente.cantidad}} {{unIngrediente.unidad}}</p>
+                {%endfor%} 
+                <h3>Elaboración: {{receta.elaboracion}}</h3>
+                <a>Tiempo: {{receta.tiempo}} minutos</a>
+                {%if usuario.id != receta.usuarioid %}
+                        <form action="{{url_for('darLike',id=receta.id)}}"method='post'>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                <input class="butons" type="submit" value="Me gusta">
+                        </form>
+                {%endif%}
+        </div>
+</div>
+{%endblock%}

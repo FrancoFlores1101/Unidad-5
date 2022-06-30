@@ -1,0 +1,21 @@
+{% extends "base_template.html" %}
+{% block title %}{{ titulo }}{% endblock %}
+
+{% block content %}
+<div class="hero-image">
+    <div id="hero-text">
+        <h1 class="title3"> {{ titulo }}</h1>
+        {% for unaReceta in recetas %}
+            <h2 class="receta">{{ unaReceta.nombre }}</h2>
+            <p> <i class="fa-solid fa-thumbs-up"></i>Me gustas: {{unaReceta.cantidadmegusta}}</p>
+            {%for unUsuario in usuarios%} 
+                {% if unUsuario.id == unaReceta.usuarioid%} 
+                    <p>Autor: {{unUsuario.nombre}}</p>
+                {%endif%} 
+            {%endfor%}
+        {% endfor %}
+        <br><br><a class="botons" href="{{ url_for('Ingreso') }}" >Menu principal</a><br><br>
+        </div>
+</div>
+
+{% endblock %}

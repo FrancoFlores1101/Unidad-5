@@ -1,0 +1,21 @@
+{% extends "base_template.html" %}
+{% block title %}Ingrediente de la receta{% endblock %}
+    {% block content%} 
+    <div class="hero-image7">
+        <div id="hero-text">
+            <h1 class="title3">Ingrediente {{numero}} de la receta {{nombre}}</h1>
+            <form class="form-register" action="{{url_for('AgregarIngrediente',id=id,nombre=nombre,numero=numero+1)}}" method="post">
+                <label for="nombre1">Nombre del ingrediente:</label>
+                <input class="controls" type="text" name="nombre1">
+                <label for="cantidad">Cantidad:</label>
+                <input  class="controls" type="number" name="cantidad">
+                <label for="unidad">Unidad:</label>
+                <input class="controls" type="text" name="unidad">
+                <input class="botons" type="submit" value="Agregar">
+                
+            </form>
+            <br><a class="botons" href="{{ url_for('RecetaAgregada',nombre=nombre) }}" >Terminar</a><br>
+        </div>
+    </div>
+        
+    {%endblock%}

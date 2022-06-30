@@ -1,0 +1,14 @@
+{% extends "base_template.html" %}
+{% block title %}Mostrar por Ingrediente{% endblock %}
+{%block content%} 
+<div class="hero-image4">
+    <div id="hero-text">
+    <h1 class="title3">Recetas filtradas por ingrediente </h1>
+        <form class="form-register" action="{{url_for('ConsultarPorIngrediente')}}"method="post">
+        <label for='ingrediente'>Ingrese ingrediente:</label>
+        <input class="controls" type="text" name="ingrediente">
+        <input class="botons" type="submit" value="Mostrar">
+    </form>
+    </div>
+</div>
+{%endblock%}

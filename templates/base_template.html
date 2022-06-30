@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class="header">
+        
+            <a href="#" class="logonav"><img src="../static/img/logo.png" alt="" width="60" height="60"> </a>
+            
+            <div class="nbg">
+            <nav class="navbar">
+                <a href="{{ url_for('Menu') }}">Menú</a>
+                <a href="{{ url_for('Ranking') }}">Ranking</a>
+                <a href="#">Ver recetas</a>
+                <a href="{{ url_for('IngresarReceta') }}"">Ingresar Receta</a>
+                <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Consultar
+                    </a>
+            
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="{{ url_for('ConsultarPorTiempo') }}">Consultar receta por tiempo</a></li>
+                        <li><a class="dropdown-item" href="{{ url_for('ConsultarPorIngrediente') }}">Consultar receta por ingrediente</a></li>
+                    </ul>
+                </div>
+            </nav>
+            </div>
+            <div id="login-btn">
+                <a class="btn" href="{{ url_for('Inicio') }}"><i class="far fa-user"></i>   Cerrar sesión</a>
+                
+            </div>
+        
+        </header> 
+        {% block content %}
+        {% endblock  %}
+        <footer>
+            <div class="container__footer">
+                <div class="box__footer">
+                    <div class="logo">
+                        <img src="../static/img/logo.png" alt="">
+                    </div>
+                </div>
+    
+                <div class="box__footer">
+                    <a href="#"> <i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                </div>
+    
+            </div>
+    
+            <div class="box__copyright">
+                <hr>
+                <p>Restaurante Sancho Panza © 2022 Flores - Zumel</p>
+            </div>
+        </footer>
+    
+        
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
+</html>

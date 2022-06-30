@@ -1,0 +1,30 @@
+{% extends "base_template.html" %}
+{% block title %}MENU DE OPCIONES{% endblock %}
+
+{% block content %}
+<div class="animate__rubberBand">
+    <h1 class="title">MENU DE OPCIONES</h1>
+    </div class="menu">
+        <h2 class="title2">Hola, {{persona.nombre}}</h2>
+        <h3 class="title2">Elija una opción</h3>
+        <div>
+            <li class="opcion">
+                <a class="boton2" href="{{ url_for('Ranking') }}">Ranking</a>
+            </li>
+            <li class="opcion">
+                <a class="boton2" href="{{ url_for('IngresarReceta') }}">Compartir Receta</a>
+            </li>
+            <li class="opcion">
+                <a class= "boton2" href="{{ url_for('ConsultarPorTiempo') }}">Consultar Recetas por tiempo</a>
+            </li>
+            <li class="opcion">
+                <a class="boton2" href="{{ url_for('ConsultarPorIngrediente') }}">Consultar Recetas por ingrediente</a>
+            </li>
+            <br><br>
+            <li class="opcion">
+                <a class="boton2" href="{{ url_for('Inicio') }}" >Cerrar sesión</a>
+            </li>
+        </div>
+    </div>
+</div>
+{% endblock %}

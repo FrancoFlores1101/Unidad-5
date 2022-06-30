@@ -1,0 +1,174 @@
+body {
+    background-image: url("../img/acceso.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+  }
+
+.title{
+    background-color: #A89D8A;
+    border-radius: 20px;
+    width: 1000px;
+    margin-left: 500px;
+    margin-right: 500px;
+    padding: 0;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+p{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 50px;
+    background-color: #FAF8F1;
+}
+
+.form-register {
+    width: 400px;
+    background: #090F0F;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.controls {
+    width: 100%;
+    background: #090F0F;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #3F3930;
+    font-size: 18px;
+    color: white;
+}
+
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+.form-register a {
+    color: white;
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.form-register .botons {
+    width: 100%;
+    background: #3F3930;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+}
+
+.form-register .botons:hover{
+    background: #7C6C50;
+}
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../img/background-footer.svg);
+    background-size: cover;
+    padding-bottom: 0;
+    /*background-color: #d0f0f8;
+    -webkit-mask-image: url("../Images/background-footer.svg");
+    mask-image: url("../Images/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;*/
+}
+
+.box__footer i{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.container__footer{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    height: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    height: 90px;
+    width: 90px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+    font-size: 18px;
+}
+
+
+.box__footer a{
+    margin-top: 20px;
+    color: #7C6C50;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+    color: #3F3930;
+}
+
+.box__footer a .fab{
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
+}
